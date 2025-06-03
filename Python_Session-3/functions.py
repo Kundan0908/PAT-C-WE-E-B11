@@ -1,24 +1,51 @@
-# Functions are a piece of code, that is created for performing a particular task that can be reused again and again.
-# Functions are created with keyword 'def'.
-# Functions can be passed a parameter/ argument, without argument.
+# Functions -> It is piece of code that is created for performing a specific task.
+# Functions are reusable piece of code.
+# Functions are created with keyword 'def'
+# In python, everything is a object
+# for a function to execute we need to call it with its object name
+# Types of functions:
+    # keyword arguments -> It contains keywords passed as a parameter/argument.
+    # positional arguments -> It contains values passed to arguments in an order
+    # Default arguments -> It contains a default value assigned to a argument/parameter
+    # Variable-length arguments -> It contains arguments of n length
 
-a = 10
-b = 20
-# print(a+b)
-c = 30
-# print(a+b+c)
+# keyword arguments
+def keyword_argument_func(name,role):
+    print(f"My name is {name} and I am a {role}")
 
-def greet(name): # --> Something inside the () is known as argument/parameter
-    print(f"Hello {name}, Welcome to this course of functions: - ")
-#
-# user_name = input("Enter your name")
-# greet(user_name)
+keyword_argument_func(name='Kundan',role='Mentor')
 
-def addition_of_numbers(input): #-> *args is used when we have multiple inputs as parameter -> ()
-    print(input)
+# positional arguments
+def positional_arguments_func(role,name):
+    print(f"My name is {name} and I am a {role}")
 
-string = 'hello'
-addition_of_numbers(string)
+positional_arguments_func('Mentor','Kundan')
+
+# Default arguments
+def default_arguments_func(name,role='Mentor'):
+    print(f"My name is {name} and I am a {role}")
+
+default_arguments_func('Kundan')
+
+# # Variable-length arguments
+def Variable_length_arguments_func(*args):
+    print(args)
+
+Variable_length_arguments_func('Kundan','Mentor')
+
+def My_dict_func(**kwargs):
+    print(kwargs)
+
+My_dict_func(name='kundan',role='mentor',experience = 7)
+
+# Return Values
+def Return_sum_func(a,b):
+    return a+b
+
+print(Return_sum_func(10,20))
+
+
+
 
 
 
