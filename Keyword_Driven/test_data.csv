@@ -1,0 +1,5 @@
+steps,Keywords,Locator,Value
+1,Open_browser,,https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC
+2,enter_username,username,testuser12
+3,enter_password,password,testuser
+4,click_login,"//input[@value=""Log In""]",
