@@ -1,0 +1,27 @@
+Pages -> Guvi Homepage, Signup Page, Signin Page, User Homepage
+Testcases ->
+class TestProjectScenario:
+    #1 -> Scenario 1 Description -> def test_validate_url -> www.guvi.in
+    #2 -> Scenario 2 Description -> def test_validate_title
+    #3 -> Scenario 9 Description -> def test_validate_dolby_assistant
+    #4 -> Scenario 8 Description -> def test_validate_hompage_tab
+    #5 -> Scenario 4 Description -> def test_validate_signup_in_login_in ->once signup validation is done, click back two times
+    #6 -> Scenario 3 Description -> def test_validate_login_button
+    #7 -> Scenario 5 Description -> def test_validate_login_in_signup ->once login visibility is done, click back.
+    #8->  Scenario 7 Description -> def test_validate_invalid_credentials
+    #9 -> Scenario 6 Description -> def test_validate_correct_credentials
+    #10 -> Scenario 10 Description -> def test_validate_logout
+
+Note -> For every step include logging mechanism -> logger.info(f"The entered URL is {driver.current_url})
+Include screenshots for all the method validations
+Add try and except block for each action -> methods
+Add comments before each test case validate
+
+try:
+    opened_url = driver.current_url
+    logger.info("The entered url is {opened_url}
+    driver.take_screenshot()
+    return True
+except Exception as e:
+    logger.info(f"Unable to open url due to {e})
+    driver.take_screenshot()
